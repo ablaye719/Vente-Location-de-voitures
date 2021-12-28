@@ -20,7 +20,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-v*04+a9i0-fu^l2)-$rugjy!5hjyf-zv5a09xwtkch!ljkgkem'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -79,11 +78,11 @@ WSGI_APPLICATION = 'VenteVoitureAPI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'vehiculeproject',
-        'USER': 'root',
+        'NAME': '',
+        'USER': '',
         'PASSWORD': '',
-        'HOST': '127.0.0.1',  # Or an IP Address that your DB is hosted on
-        'PORT': '3306',
+        'HOST': '',  # Or an IP Address that your DB is hosted on
+        'PORT': '',
         'OPTIONS': {
             "init_command": "SET foreign_key_checks = 0;",
         },
